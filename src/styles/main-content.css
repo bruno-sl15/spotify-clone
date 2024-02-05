@@ -51,6 +51,10 @@
     border: 1px solid transparent;
 }
 
+.header__search:hover {
+    border: 1px solid #fff;
+}
+
 .header__search img {
     width: 16px;
     height: 16px;
@@ -82,6 +86,11 @@
     margin-right: 32px;
 }
 
+.header__login .subscribe:hover {
+    transform: scale(1.04);
+    color: var(--text-base-light);
+  }
+
 .header__login .login {
     width: 100px;
     height: 48px;
@@ -90,6 +99,12 @@
     font-weight: 700;
     border-radius: 40px;
 }
+
+.header__login .login:hover {
+    transform: scale(1.04);
+  }
+
+/* PLAYLIST */
 
 .playlist-container {
     height: 68vh;
