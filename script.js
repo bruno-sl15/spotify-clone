@@ -11,6 +11,7 @@ function requestApi(searchTerm) {
 
 function displayResults(result) {
     resultPlaylist.classList.add('hidden');
+
     const artistName = document.getElementById('artist-name');
     const artistImg = document.getElementById('artist-img');
 
@@ -19,7 +20,12 @@ function displayResults(result) {
         artistImg.src = element.urlImg;        
     });
 
-    resultArtist.classList.remove('hidden');
+    if (result.length === 0) {
+        resultArtist.classList.add('hidden');
+    }
+    else {
+        resultArtist.classList.remove('hidden');w
+    }
 }
 
 document.addEventListener('input', function(e) {
