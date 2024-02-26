@@ -24,7 +24,7 @@ function displayResults(result) {
         resultArtist.classList.add('hidden');
     }
     else {
-        resultArtist.classList.remove('hidden');w
+        resultArtist.classList.remove('hidden');
     }
 }
 
